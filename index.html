@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link type="text/css" rel="stylesheet" href="src/css/styles.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="main">
+		<div id="main_sidebar">
+			<div id="main_sidebar-title"><span id="main_sidebar-title-text">Assignments</span><i id="main_sidebar-add" class="material-icons">add</i></div>
+			<div id="main_sidebar-body"></div>
+		</div>
+		<div id="main_view_container">
+			<div id="main_view">
+				<div id="main_view-header">
+					<div id="main_view-header-tab_container">
+						<span id="header_tab-assignment" class="main_view-header-tab"><span class="main_view-header-tab_text">Assignment</span></span>
+						<span id="header_tab-submissions" class="main_view-header-tab"><span class="main_view-header-tab_text">Submissions</span></span>
+					</div>
+				</div>
+				<div id="main_view-body">
+					<div id="main_view-body-assignment" class="main_view-body-content"></div>
+					<div id="main_view-body-submissions" class="main_view-body-content"></div>
+				</div>
+			</div>
+			<div id="main_view-status">
+				<div id="main_view-status-text">Select an assignment</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="modal-add_assignment-container">
+		<div id="modal-add_assignment-body">
+			<div class="modal-add_assignment-segment">
+				<div class="modal-add_assignment-segment_text">Assignment:</div>
+				<input id="add_assignment-title" class="modal-add_assignment-segment_input" value=""></input>
+			</div>
+			<div class="modal-add_assignment-segment">
+				<div class="modal-add_assignment-segment_text">Due date:</div>
+				<input id="add_assignment-due" class="modal-add_assignment-segment_input"></input>
+			</div>
+			<div class="modal-add_assignment-segment">
+				<div class="modal-add_assignment-segment_text">Description:</div>
+				<textarea id="add_assignment-description" class="modal-add_assignment-segment_input" rows="10"></textarea>
+			</div>
+			<div class="modal-add_assignment-segment modal-button_segment">
+				<div id="modal-add_assignment-add_button" class="modal-button">Add</div>
+				<div id="modal-add_assignment-cancel_button" class="modal-button">Cancel</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+	<script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="src/js/index.js"></script>
+</html>
